@@ -1,0 +1,13 @@
+{
+  "model": "gpt-4o-mini",
+  "prompt_version": "v1.0",
+  "description": "Baseline experiment",
+  "timestamp": "2026-06-14T01:48:42.270698",
+  "accuracy_mean": 0.91,
+  "faithfulness_mean": 0.985,
+  "hallucination_mean": 0.015,
+  "latency_p50": 824.0,
+  "latency_p95": 3510.4,
+  "satisfaction_mean": 0.235,
+  "total_examples": 20
+}

@@ -1,0 +1,13 @@
+{
+  "model": "gpt-4o-mini",
+  "prompt_version": "v2.0",
+  "description": "Deliberately bad prompt to test gate",
+  "timestamp": "2026-06-14T01:56:36.084546",
+  "accuracy_mean": 0.455,
+  "faithfulness_mean": 0.815,
+  "hallucination_mean": 0.185,
+  "latency_p50": 773.4,
+  "latency_p95": 1038.6,
+  "satisfaction_mean": 0.265,
+  "total_examples": 20
+}

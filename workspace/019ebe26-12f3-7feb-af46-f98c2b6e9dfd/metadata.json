@@ -1,0 +1,11 @@
+{
+  "id": "019ebe26-12f3-7feb-af46-f98c2b6e9dfd",
+  "name": "llm-eval-dash",
+  "description": "LLM evaluation dashboard",
+  "team_id": null,
+  "org_id": null,
+  "date_from": null,
+  "date_to": null,
+  "created_at": "2026-06-12T19:23:46.803785",
+  "version": "1"
+}
