@@ -6,12 +6,6 @@ Built with **Evidently AI**, **OpenAI**, **Anthropic**, **Groq**, and **Streamli
 
 ---
 
-## Live Demo
-
-> Run locally with `streamlit run dashboard.py` after setup.
-
----
-
 ## Dashboard Pages
 
 | Page | Description |
@@ -99,6 +93,95 @@ Built with **Evidently AI**, **OpenAI**, **Anthropic**, **Groq**, and **Streamli
 <img width="854" height="614" alt="image" src="https://github.com/user-attachments/assets/d5f2fd07-eba0-4855-8011-9e516308991c" />
 
 
+---
+
+## Setup
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/AliZubair13/LLM-Eval-Dashboard
+cd LLM-Eval-Dashboard
+```
+
+### 2. Create virtual environment
+
+```bash
+py -m venv venv
+venv\Scripts\Activate.ps1        # Windows
+source venv/bin/activate          # Mac/Linux
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Set API keys
+
+```bash
+# Windows PowerShell
+$env:OPENAI_API_KEY="sk-proj-..."
+$env:ANTHROPIC_API_KEY="sk-ant-..."
+$env:GROQ_API_KEY="gsk_..."
+
+# Mac/Linux
+export OPENAI_API_KEY="sk-proj-..."
+export ANTHROPIC_API_KEY="sk-ant-..."
+export GROQ_API_KEY="gsk_..."
+```
+
+### 5. Run all 4 model experiments
+
+```bash
+python run_experiment.py
+```
+
+### 6. Launch the dashboard
+
+```bash
+python -m streamlit run dashboard.py
+```
+
+Opens at `http://localhost:8501`
+
+---
+
+## Cost to Run Full Benchmark
+
+| Model | 20 questions cost |
+|---|---|
+| Llama 3.1 8B | $0.0002 (Groq free tier) |
+| GPT-4o Mini | $0.0006 |
+| GPT-4o | $0.0121 |
+| Claude Sonnet | $0.0291 |
+| **Total** | **~$0.042** |
+
+---
+
+## Key Findings
+
+- **Speed:** Llama 3.1 8B is 3.3x faster than GPT-4o and 8.3x faster than Claude Sonnet at P95
+- **Cost:** Llama 3.1 8B costs 75x less than GPT-4o and 181x less than Claude Sonnet per query
+- **Accuracy gap:** Only 3.5% separates the best (GPT-4o Mini 90%) from the worst (Claude Sonnet 86.5%) — a very small margin for such a large cost difference
+- **Hallucination:** All models perform well; GPT-4o has the lowest rate at 1.5%
+- **Best value:** Llama 3.1 8B via Groq — production-ready quality at near-zero cost
+
+---
+
+## Tech Stack
+
+| Layer | Tool |
+|---|---|
+| LLM providers | OpenAI, Anthropic, Groq |
+| Tracing | Evidently AI (tracely) |
+| Evaluation | LLM-as-judge (gpt-4o-mini) |
+| Dashboard | Streamlit + Plotly |
+| Data | Pandas, CSV, JSONL |
+| CI gate | Python script (regression_gate.py) |
+
+---
 
 
 
