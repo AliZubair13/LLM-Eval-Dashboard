@@ -186,9 +186,3 @@ Opens at `http://localhost:8501`
 
 
 
-
-
-
----
-
-## Architecture
