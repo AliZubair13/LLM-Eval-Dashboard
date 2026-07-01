@@ -44,7 +44,8 @@ Built with **Evidently AI**, **OpenAI**, **Anthropic**, **Groq**, and **Streamli
 
 ### Model Comparison
 <!-- Add screenshot here -->
-![Model Comparison](screenshots/model_comparison.png)
+<img width="1284" height="537" alt="image" src="https://github.com/user-attachments/assets/dcfde15c-5cd1-4e1e-9a4d-16edcc155d36" />
+
 
 ### Accuracy by Category
 <!-- Add screenshot here -->
