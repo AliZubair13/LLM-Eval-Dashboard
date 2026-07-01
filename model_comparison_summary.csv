@@ -1,0 +1,5 @@
+model,provider,display_name,description,prompt_version,cost_per_1k_prompt,cost_per_1k_completion,safe_name,timestamp,accuracy_mean,faithfulness_mean,hallucination_mean,latency_p50,latency_p95,satisfaction_mean,total_examples,total_cost_usd,cost_per_query_avg,prompt_tokens_avg,completion_tokens_avg,slow_responses,errors
+gpt-4o-mini,openai,GPT-4o Mini,Fast cheap OpenAI model,v1.0,0.00015,0.0006,gpt_4o_mini,2026-07-01T17:06:50.748897,0.9,0.98,0.02,1922.6,5204.4,0.235,20,0.000642,3.2e-05,38.2,44.0,4,0
+gpt-4o,openai,GPT-4o,Best OpenAI model,v1.0,0.0025,0.01,gpt_4o,2026-07-01T17:07:59.556593,0.89,0.985,0.015,959.7,2961.2,0.22,20,0.012127,0.000606,38.2,51.1,1,0
+claude-sonnet-4-5,anthropic,Claude Sonnet,Anthropic flagship model,v1.0,0.003,0.015,claude_sonnet,2026-07-01T17:12:00.919703,0.865,0.98,0.02,3961.5,7407.3,0.355,20,0.029091,0.001455,34.8,90.0,14,0
+llama-3.1-8b-instant,groq,Llama 3.1 8B,Meta Llama 3.1 via Groq (free),v1.0,5e-05,8e-05,llama_3.1_8b,2026-07-01T17:12:56.995349,0.87,0.975,0.025,307.7,891.8,0.34,20,0.000169,8e-06,61.6,66.8,1,0
